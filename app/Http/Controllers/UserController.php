@@ -68,8 +68,8 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
-        return redirect('/')->with('success', 'Registration successful!');
+        Auth::login($user);
+        return redirect('/dashboard')->with('success', 'Registration successful!');
     }
 
     public function logout(Request $request)
