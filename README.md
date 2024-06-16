@@ -2,7 +2,7 @@
 ## 1. Download or clone the project.
 ## 2. Create and setup up .env (Reference: .env.example) file for your DB connection:
 ### Example: 
--DB_CONNECTION=pgsql
+*DB_CONNECTION=pgsql
 -DB_HOST=127.0.0.1
 -DB_PORT=5432
 -DB_DATABASE=test
